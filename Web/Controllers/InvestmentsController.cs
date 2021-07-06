@@ -30,20 +30,16 @@ namespace Web.Controllers
         [Route("[action]")]
         public async Task<IActionResult> CalculateInvestmentDetails(Investments investments)
         {
-
             if (investments == null)
             {
                 return BadRequest();
             }
-
-            var knownInvestmentTypes = Enum.GetValues(typeof(InvestmentType));
             bool isKnownInvestmentType = investments.options.Any(item => Enum.IsDefined(typeof(InvestmentType), item.selectedItem));
 
             if (!isKnownInvestmentType)
             {
                 return NotFound("Type of Investment not supported");
             }
-
             try
             {
                 double result = 0;
