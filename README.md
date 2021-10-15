@@ -32,7 +32,7 @@ Clean code (Using Clean Architecture) and .NET Core 3.1
 
 ![image](https://user-images.githubusercontent.com/34472881/124537748-d746d380-de5d-11eb-9c15-c9c13ab651b4.png)
 
-Thank you.
+Thank you. 2
 
 
 
